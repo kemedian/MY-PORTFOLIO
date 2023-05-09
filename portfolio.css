@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    width: 100%;
+}
+.page {
+width: 70%;
+background-color: rgb(239, 217, 177);
+margin: auto;
+margin-top: 50px;
+padding-top: 30px;
+padding-bottom: 50px;
+} 
+header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    width: 100%;
+}
+.logo {
+    margin-left: 80px;
+   
+}
+
+ul {
+    display: flex;
+    margin-left: 240px; 
+}
+ul li a {
+    text-decoration: none;
+   padding-left: 38px; 
+   color: black;
+}
+.chat {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+.allintro {
+    display: flex;
+}
+.intro {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 120px;
+    width: 50%;
+}
+.firstline {
+    color: orange;
+    font-size: 20px;
+}
+.name {
+    color: rgb(1,30,71);
+}
+.my-photo {
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 100px;
+}
+.learn {
+    margin-right: 50px;
+    background-color: orange;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+}
+.hire {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 10px 25px; 
+    color: rgb(1,30,71);
+    font-weight: bold;
+}
+.services {
+    text-align: center;
+    margin-top: 50px;
+}
+.myservices {
+    color: rgb(1,30,71);
+    font-weight: bolder;
+    font-size: 24px;
+}
+hr {
+    width: 250px;
+    margin: auto;
+    border: 1px solid orange;
+}
+.webdev {
+    background-color: white;
+    width: 33%;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+.cont {
+    margin-left: 16px;
+}
+.fa-github {
+    margin-top: 15px;
+}
+.lor {
+    padding-bottom: 15px;
+}
+.last {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.move {
+    margin-right: 50px;
+}
+.lastbox {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.testimonials {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+.submit {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center;
+    border: none;
+}
+
+/* form {
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, orange, rgb(239, 202, 132));
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation: form-animation 0.5s ease-in-out;
+    width: 30%;
+    margin: auto;
+  }
+  
+  @keyframes form-animation {
+    from {
+      transform: rotateX(-30deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    color: rgb(255, 255, 255);
+    border: 2px solid #dddddd;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .input::placeholder {
+    color: #fff;
+  }
+  
+  .input:hover,
+  .input:focus {
+    border-color: orangered;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotateY(20deg);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: orange;
+    font-size: 16px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  button:hover {
+    background-color: orange;
+    color: #fff;
+    font-size: 17px;
+    transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+.socials {
+padding: 20px;
+}
